@@ -181,7 +181,7 @@ export const sdlcContent = {
     team: [
       { name: "Samuel Esteban Cortes Acosta", role: "Líder de Proyecto / Documentación", img: "/autores/Samuel.jpeg", desc: "Encargado de la estructura metodológica, investigación de las fuentes y coordinación general del equipo." },
       { name: "Duvan Andres Gaitan Pedraza", role: "Desarrollador Frontend", img: "/autores/Duvan.jpeg", desc: "Responsable de la codificación y estructuración visual de la plataforma interactiva." },
-      { name: "Miguel Ángel Acosta Torres", role: "Documentación y Aseguramiento", img: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?auto=format&fit=crop&q=80&w=200", desc: "Apoyo en la validación de requerimientos, control de calidad y redacción técnica de Fases y Modelos." },
+      { name: "Miguel Ángel Acosta Torres", role: "Documentación y Aseguramiento", img: "/autores/Miguel.jpeg", desc: "Apoyo en la validación de requerimientos, control de calidad y redacción técnica de Fases y Modelos." },
       { name: "Juan Andrés Fonseca Barón", role: "Desarrollo y Pruebas", img: "/autores/Juan.jpeg", desc: "Soporte en desarrollo funcional de la plataforma y testing de las rutas de usuario." }
     ]
   }

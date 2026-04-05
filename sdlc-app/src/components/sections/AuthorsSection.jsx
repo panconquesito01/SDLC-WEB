@@ -41,12 +41,6 @@ export function AuthorsSection() {
             <p className="text-slate-400 text-sm mb-6 leading-relaxed">
               {member.desc}
             </p>
-            
-            <div className="flex items-center justify-center gap-4 text-slate-500">
-              <a href="#" className="hover:text-white transition-colors"><LinkIcon className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-white transition-colors"><Globe className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-white transition-colors"><Mail className="w-5 h-5" /></a>
-            </div>
           </motion.div>
         ))}
       </div>
