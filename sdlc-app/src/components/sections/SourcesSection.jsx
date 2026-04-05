@@ -1,6 +1,7 @@
 import { SectionContainer, SectionHeader } from '../layout/SectionContainer';
 import { sdlcContent } from '../../data/sdlcContent';
 import { ExternalLink, BookOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function SourcesSection() {
   const { title, items } = sdlcContent.sources;
@@ -40,19 +41,10 @@ export function Footer() {
   return (
     <footer className="bg-surface/50 border-t border-white/5 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
-          <div className="flex items-center gap-2 group">
-            <span className="font-bold text-2xl tracking-tight text-white group-hover:text-primary transition-colors">
-              SDLC<span className="text-primary">.edu</span>
-            </span>
-          </div>
-          <div className="flex flex-wrap justify-center gap-6">
-            <a href="#home" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Inicio</a>
-            <a href="#definition" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Qué es</a>
-            <a href="#phases" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Fases</a>
-            <a href="#models" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Modelos</a>
-            <a href="#authors" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Autores</a>
-          </div>
+        <div className="flex flex-col items-center justify-center mb-12">
+          <Link to="/" className="font-bold text-3xl tracking-tight text-white hover:text-primary transition-colors">
+            SDLC<span className="text-primary">.Pro</span>
+          </Link>
         </div>
         
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">

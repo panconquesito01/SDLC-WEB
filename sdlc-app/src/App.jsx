@@ -35,7 +35,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-background relative selection:bg-primary/30 selection:text-white flex flex-col justify-between">
         <Navbar />
-        <main className="flex-1">
+        <main className="flex-1 pb-20">
           <AnimatedRoutes />
         </main>
         <Footer />
