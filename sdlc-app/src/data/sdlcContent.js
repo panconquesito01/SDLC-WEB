@@ -177,7 +177,7 @@ export const sdlcContent = {
   },
   authors: {
     title: "Equipo de Estudiantes",
-    desc: "Proyecto universitario desarrollado por estudiantes de Ingeniería de Sistemas.",
+    desc: "Proyecto universitario desarrollado por estudiantes del curso Gestión del conocimiento.",
     team: [
       { name: "Samuel Esteban Cortes Acosta", role: "Líder de Proyecto / Documentación", img: "/autores/Samuel.jpeg", desc: "Encargado de la estructura metodológica, investigación de las fuentes y coordinación general del equipo." },
       { name: "Duvan Andres Gaitan Pedraza", role: "Desarrollador Frontend", img: "/autores/Duvan.jpeg", desc: "Responsable de la codificación y estructuración visual de la plataforma interactiva." },
