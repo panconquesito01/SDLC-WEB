@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd sdlc-app && npm install",
+  "buildCommand": "cd sdlc-app && npm run build",
+  "outputDirectory": "sdlc-app/dist"
+}
