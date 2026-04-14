@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { SectionContainer, SectionHeader } from '../layout/SectionContainer';
 import { sdlcContent } from '../../data/sdlcContent';
-import { Mail, Globe, LinkIcon } from 'lucide-react';
 
 export function AuthorsSection() {
   const { title, desc, team } = sdlcContent.authors;

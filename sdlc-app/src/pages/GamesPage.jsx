@@ -10,8 +10,8 @@ import { HangmanGame } from '../components/games/HangmanGame';
 const gamesList = [
   {
     id: 'quiz',
-    name: 'Quiz de Ingeniería',
-    desc: 'Pon a prueba tus fundamentos técnicos en 5 preguntas cruciales.',
+    name: 'Quiz rapido',
+    desc: 'Repasa las ideas principales con preguntas faciles de entender.',
     icon: BrainCircuit,
     color: 'text-primary',
     bg: 'bg-primary/10',
@@ -19,8 +19,8 @@ const gamesList = [
   },
   {
     id: 'match',
-    name: 'Empareja Conceptos',
-    desc: 'Relaciona cada término clave con su definición técnica exacta.',
+    name: 'Empareja ideas',
+    desc: 'Relaciona cada concepto con su significado de forma visual.',
     icon: LayoutGrid,
     color: 'text-emerald-400',
     bg: 'bg-emerald-400/10',
@@ -29,7 +29,7 @@ const gamesList = [
   {
     id: 'words',
     name: 'Sopa de Letras',
-    desc: 'Cuadrícula compleja 14x14 autogenerada con conceptos ocultos.',
+    desc: 'Busca palabras importantes del tema en una cuadricula mas amigable.',
     icon: BookType,
     color: 'text-secondary',
     bg: 'bg-secondary/10',
@@ -38,7 +38,7 @@ const gamesList = [
   {
     id: 'hangman',
     name: 'Ahorcado SDLC',
-    desc: 'Salva el proyecto adivinando la palabra secreta con pistas técnicas.',
+    desc: 'Adivina palabras clave usando pistas cortas y faciles.',
     icon: Skull,
     color: 'text-red-400',
     bg: 'bg-red-400/10',
@@ -66,7 +66,7 @@ export function GamesPage() {
       <div className="absolute bottom-[10%] right-[10%] w-[400px] h-[400px] bg-secondary/10 rounded-full mix-blend-screen filter blur-[100px] animate-blob pointer-events-none" style={{ animationDelay: '2s' }} />
 
       <SectionContainer id="games-hub" className="bg-transparent">
-        <SectionHeader title="Zona Interactiva" subtitle={activeGame ? "Jugando..." : "Selecciona un Juego"} />
+        <SectionHeader title="Zona interactiva" subtitle={activeGame ? "Jugando" : "Elige una actividad"} />
         
         <div className="max-w-4xl mx-auto mt-8">
           <AnimatePresence mode="wait">

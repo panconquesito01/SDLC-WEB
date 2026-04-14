@@ -1,10 +1,10 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { RefreshCw, ArrowLeft, Trophy } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
-const WORDS = ["DEVOPS", "CASCADA", "CODIGO", "AGILE", "PRUEBAS", "REQUISITO", "DISEÑO", "DESPLIEGUE"];
-const GRID_SIZE = 14;
+const WORDS = ["DEVOPS", "CASCADA", "CODIGO", "AGIL", "PRUEBAS", "DISENO", "EQUIPO", "MEJORA"];
+const GRID_SIZE = 12;
 
 // Directions: [row_change, col_change]
 const DIRS = [
@@ -80,7 +80,7 @@ export function WordSearchGame({ onBack }) {
     const currentStrRev = selectedCells.map(c => c.letter).reverse().join('');
     
     let matchedWord = null;
-    for (let word of WORDS) {
+    for (const word of WORDS) {
       if (!foundWords.includes(word)) {
         if (currentStr === word || currentStrRev === word) {
           matchedWord = word;
@@ -124,7 +124,7 @@ export function WordSearchGame({ onBack }) {
         {!gameWon ? (
           <motion.div key="word-search" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} className="glass-effect rounded-[3rem] p-8 lg:p-12 border border-white/5 shadow-2xl">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-2xl font-bold text-white uppercase tracking-wide">Sopa de Letras (Compleja)</h3>
+              <h3 className="text-2xl font-bold text-white uppercase tracking-wide">Sopa de letras</h3>
               <button onClick={initGame} className="flex gap-2 items-center text-primary text-sm hover:text-white transition-colors">
                 <RefreshCw className="w-4 h-4" /> Generar Nuevo 
               </button>
@@ -180,7 +180,7 @@ export function WordSearchGame({ onBack }) {
           <motion.div key="word-search-win" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="glass-effect rounded-[3rem] p-12 lg:p-16 border border-white/10 text-center shadow-2xl">
             <Trophy className="w-24 h-24 mx-auto text-primary mb-8 drop-shadow-[0_0_30px_rgba(14,165,233,0.5)]" />
             <h3 className="text-4xl font-bold text-white mb-4">¡Impresionante!</h3>
-            <p className="text-xl text-slate-300 mb-8">Resolviste la cuadrícula compleja en tiempo récord.</p>
+            <p className="text-xl text-slate-300 mb-8">Encontraste todas las palabras importantes del tema.</p>
             <div className="flex justify-center gap-4">
                <button onClick={initGame} className="flex items-center gap-2 px-6 py-3 rounded-full bg-surface text-white hover:bg-white/10 border border-white/10 transition-all font-semibold">
                  <RefreshCw className="w-5 h-5" /> Nueva Cuadrícula

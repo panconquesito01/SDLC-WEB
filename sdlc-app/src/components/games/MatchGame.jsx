@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { RefreshCw, ArrowLeft, Check, Trophy } from 'lucide-react';
+import { RefreshCw, ArrowLeft, Trophy } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 const originalPairs = [
-  { id: 1, term: "SRS", desc: "Software Requirement Specification" },
-  { id: 2, term: "DevSecOps", desc: "Seguridad integrada tempranamente (Shift-Left)" },
-  { id: 3, term: "Modelo en Cascada", desc: "Lineal, estricto y difícil de retroceder" },
-  { id: 4, term: "Modelo Ágil", desc: "Basado en Sprints iterativos y mucha adaptabilidad" },
-  { id: 5, term: "CI/CD", desc: "Integración y Entrega Continua automatizada" }
+  { id: 1, term: "Planificacion", desc: "Decidir que problema se quiere resolver" },
+  { id: 2, term: "Requisitos", desc: "Lista clara de lo que la app debe hacer" },
+  { id: 3, term: "Diseno", desc: "Bocetos y pantallas antes de programar" },
+  { id: 4, term: "DevOps", desc: "Trabajo conjunto para probar y publicar mejor" },
+  { id: 5, term: "Mantenimiento", desc: "Corregir errores y agregar mejoras despues del lanzamiento" }
 ];
 
 function shuffleArray(array) {
@@ -84,12 +84,12 @@ export function MatchGame({ onBack }) {
       <AnimatePresence mode="wait">
         {!gameWon ? (
           <motion.div key="match-board" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} className="glass-effect rounded-[3rem] p-8 lg:p-12 border border-white/5 shadow-2xl">
-            <h3 className="text-2xl font-bold text-white mb-8 text-center uppercase tracking-wide">Empareja el Concepto</h3>
+            <h3 className="text-2xl font-bold text-white mb-8 text-center uppercase tracking-wide">Empareja las ideas</h3>
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Terms Column */}
               <div className="space-y-4">
-                <h4 className="text-primary font-semibold mb-4 text-center">Términos Clave</h4>
+                <h4 className="text-primary font-semibold mb-4 text-center">Conceptos</h4>
                 {terms.map((item) => {
                   const isMatched = matched.includes(item.id);
                   const isSelected = selectedTerm?.id === item.id;
@@ -116,7 +116,7 @@ export function MatchGame({ onBack }) {
 
               {/* Definitions Column */}
               <div className="space-y-4">
-                <h4 className="text-secondary font-semibold mb-4 text-center">Definiciones</h4>
+                <h4 className="text-secondary font-semibold mb-4 text-center">Significados</h4>
                 {defs.map((item) => {
                   const isMatched = matched.includes(item.id);
                   const isSelected = selectedDef?.id === item.id;
@@ -145,8 +145,8 @@ export function MatchGame({ onBack }) {
         ) : (
           <motion.div key="match-win" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="glass-effect rounded-[3rem] p-12 lg:p-16 border border-white/10 text-center shadow-2xl">
             <Trophy className="w-24 h-24 mx-auto text-emerald-400 mb-8 drop-shadow-[0_0_30px_rgba(16,185,129,0.5)]" />
-            <h3 className="text-4xl font-bold text-white mb-4">¡Memoria Perfecta!</h3>
-            <p className="text-xl text-slate-300 mb-8">Has dominado el vocabulario esencial del SDLC.</p>
+            <h3 className="text-4xl font-bold text-white mb-4">¡Muy bien!</h3>
+            <p className="text-xl text-slate-300 mb-8">Relacionaste correctamente las ideas principales del tema.</p>
             <div className="flex justify-center gap-4">
                <button onClick={initGame} className="flex items-center gap-2 px-6 py-3 rounded-full bg-surface text-white hover:bg-white/10 border border-white/10 transition-all font-semibold">
                  <RefreshCw className="w-5 h-5" /> Jugar de Nuevo

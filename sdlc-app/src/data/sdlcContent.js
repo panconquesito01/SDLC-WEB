@@ -1,188 +1,508 @@
 export const sdlcContent = {
   hero: {
     title: "El Ciclo de Vida del Software",
-    subtitle: "Framework de Ingeniería y Calidad Institucional",
-    description: "Una inmersión académica y corporativamente rigurosa en el framework metodológico que estructura, planifica, desarrolla y asegura categóricamente la calidad de los sistemas de software modernos a gran escala empresarial. Descubre cómo las fases técnicas dictan el triunfo de los ecosistemas digitales.",
+    subtitle: "Aprende como nace una app, paso a paso",
+    description:
+      "Una guia visual para entender como se idea, se disena, se programa, se prueba y se mejora un software sin perderse en palabras dificiles.",
+    cta1: "Ver las fases",
+    cta2: "Comparar modelos",
   },
   definition: {
-    title: "Fundamentos y Conceptos Universales del SDLC",
+    title: "Que es el SDLC y para que sirve",
     paragraphs: [
-      "El Software Development Life Cycle (SDLC) no es meramente un proceso de desarrollo; es una disciplina de ingeniería de sistemas estructurada y adoptada de manera universal por las esferas de desarrollo de software modernas. Funciona como el 'esqueleto' metodológico indispensable para concebir, diseñar, desarrollar, probar y hacer evolucionar sistemas complejos con el nivel de robustez más alto de la industria.",
-      "Como establecen gigantes informáticos como IBM o los repositorios de GeeksforGeeks, el objetivo medular del SDLC es producir arquitecturas de software que no solo operen bajo exigencias operativas severas, sino que superen proactivamente todas las expectativas del cliente en calidad transaccional, respeten de manera férrea las estimaciones de tiempo y no fracturen el presupuesto financiero asignado (Control Financiero y Temporal).",
-      "La ausencia o inobservancia de un ciclo de vida delineado de manera estricta conduce inexorablemente al fenómeno conocido como 'Software Crisis' — la tendencia a desarrollar metodologías insostenibles, códigos inmanejables, fallas de seguridad abisales y arquitecturas fractales imposibles de mantener operativas. Por tanto, implementar el SDLC reduce exponencialmente los vectores de riesgo dividiendo el insalvable océano que es construir código, en fases microscópicamente gobernables."
+      "El SDLC es el camino ordenado que sigue un equipo para crear software. Sirve para no improvisar y para que todos sepan que toca hacer en cada momento.",
+      "Piensa en el SDLC como una receta: primero decides que vas a preparar, luego organizas los ingredientes, cocinas, pruebas el resultado y corriges lo que haga falta.",
+      "Cuando se usa bien, el trabajo se vuelve mas claro, los errores se descubren antes y el programa termina siendo mas util para las personas que lo van a usar.",
     ],
     highlights: [
       {
-        title: "Mitigación Drástica de Riesgos (Risk Management)",
-        desc: "La gobernanza del ciclo de vida proporciona puntos de control y auditorías (gates). Permitiendo evaluar el costo-beneficio antes de movilizar los altos presupuestos que requiere encender un servidor de producción."
+        title: "Claridad",
+        desc: "Divide un proyecto grande en pasos pequenos y faciles de seguir.",
       },
       {
-        title: "Garantía de Calidad Determinista (QA & Testing)",
-        desc: "Asegura metodológicamente que la base de código compilado se adhiere milimétricamente al Documento SRS de Aceptación (Software Requirement Specification) mediante flujos de testeo cruzados y repetitivos."
+        title: "Control",
+        desc: "Permite revisar el avance antes de seguir con la siguiente parte.",
       },
       {
-        title: "Trazabilidad Cíclica Total",
-        desc: "Proporciona lo que la industria llama una 'Traceability Matrix', donde cualquier línea de código, método o función, puede ser rastreada inversamente hacia un requerimiento fundamental derivado de un stakeholder."
-      }
-    ]
+        title: "Calidad",
+        desc: "Ayuda a detectar errores temprano para que la app funcione mejor.",
+      },
+    ],
   },
   importance: {
-    title: "La Trascendencia del SDLC en la Industria Tecnológica",
+    title: "Por que el SDLC ayuda tanto",
     items: [
       {
-        title: "Optimización Crítica de la Planificación",
-        desc: "Erradica las estimaciones arbitrarias, dotando al project manager de fórmulas matemáticas estables para la estimación de plazos (Sprint Planning) y presupuestos operativos."
+        title: "Ordena el trabajo",
+        desc: "Hace que el equipo sepa por donde empezar y que revisar despues.",
       },
       {
-        title: "Disminución Drástica de Deuda Técnica",
-        desc: "El seguimiento del ciclo de vida impone normativas y patrones de diseño (Design Patterns) obligatorios al escribir el código, previniendo arquitecturas indescifrables a futuro."
+        title: "Evita errores grandes",
+        desc: "Detecta problemas antes de que se vuelvan costosos o dificiles de arreglar.",
       },
       {
-        title: "Alineamiento con los Stakeholders",
-        desc: "Acrecienta dramáticamente la transferencia de conocimiento entre el brazo técnico (Programadores y Arquitectos) y la cúpula ejecutiva o cliente final mediante entregables tangibles."
+        title: "Mejora la comunicacion",
+        desc: "Profesores, clientes, programadores y usuarios entienden mejor el proyecto.",
       },
       {
-        title: "Resiliencia Analítica Predictiva",
-        desc: "Identifica limitaciones y abismos técnicos como límites de escalabilidad, embotellamientos funcionales y restricciones de hardware virtual mucho antes de la fase productiva."
-      }
-    ]
+        title: "Entrega mejores resultados",
+        desc: "El software final suele ser mas util, estable y facil de mejorar.",
+      },
+    ],
+  },
+  phasesOverview: {
+    title: "Mira el recorrido completo antes de entrar en detalle",
+    description:
+      "Este video muestra como una idea se convierte en una app funcional. Despues, puedes ir fase por fase y entender que pasa en cada una.",
+    videoTitle: "Video sobre las fases del ciclo de vida del software",
+    videoUrl: "https://www.youtube.com/embed/TLVDBAo1aEY?rel=0",
   },
   phases: [
     {
       id: "planificacion",
-      name: "1. Phase de Planificación Estratégica (Strategic Planning)",
-      description: "Ampliamente catalogada como la fase definitoria o fase '0'. Todo esfuerzo analítico posterior depende de que la ambigüedad sea extirpada en esta sesión. Se definen alcances comerciales, se miden los Riesgos Sistémicos Financieros, operacionales y legales. Se decide cómo los factores ajenos afectarán la integridad del proyecto. Técnicamente es aquí donde nace la viabilidad algorítmica para determinar si poseemos la ingeniería para cumplir los sueños del negocio.",
-      roles: ["Sr. Project Manager", "Lead Business Analyst", "Chief Architect (CTO)"],
-      tools: ["Jira Software", "Microsoft Project Enterprise", "Confluence"],
-      metrics: ["Índice de Retorno de Inversión (ROI Estimado)", "Time to Market Estimado"],
-      deliverable: "Project Proposal Plan y Feasibility Study Report (FSR).",
+      icon: "ClipboardList",
+      name: "1. Planificacion",
+      shortDesc: "Decidir que problema vamos a resolver",
+      description:
+        "En esta fase el equipo conversa con quienes necesitan la app y define la meta. Aqui se decide que hara el programa, para quien sera y cuanto tiempo puede tomar.",
+      activities: [
+        "Escuchar la idea principal",
+        "Definir objetivos claros",
+        "Elegir que se hara primero",
+      ],
+      roles: ["Profesor o cliente", "Lider del proyecto", "Equipo de desarrollo"],
+      tools: ["Reuniones", "Notas compartidas", "Tableros de tareas"],
+      metrics: [
+        "La meta se entiende en una sola frase",
+        "Todos saben a quien va dirigida la app",
+      ],
+      deliverable: "Un plan sencillo con metas, publico y tareas principales.",
+      question: "Pregunta guia: que problema queremos resolver?",
+      funExample: "Ejemplo: una escuela quiere una app para recordar tareas y eventos importantes.",
+      image:
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+      imageAlt: "Equipo planeando un proyecto en una mesa de trabajo.",
     },
     {
       id: "analisis",
-      name: "2. Fase de Análisis Analítico y Requisitos Fundativos (Requirement Analysis)",
-      description: "Es el arte pragmático de traducir los anhelos e idiomas humanos a especificaciones de ingeniería estrictamente medibles. Se modela el problema fundamental con diagramas formales. En esta etapa ya no hay supuestos, todo queda solidificado en el documento de requerimientos que servirá tanto como norte tecnológico como contrato entre el equipo desarrollador y la perspectiva de la junta directiva corporativa.",
-      roles: ["Systems Analyst Regular/Sr", "Product Owner"],
-      tools: ["UML Modelers", "Enterprise Architect", "Draw.io Pro"],
-      metrics: ["Desviación de Ambigüedad en el SRS", "Volumen de Casos de Uso Documentados y Aprobados"],
-      deliverable: "El inamovible Software Requirement Specification (SRS).",
+      icon: "Search",
+      name: "2. Analisis",
+      shortDesc: "Entender bien lo que la app debe hacer",
+      description:
+        "Aqui se transforman las ideas en una lista clara de necesidades. El equipo pregunta, anota y organiza funciones para que no queden dudas antes de empezar a disenar o programar.",
+      activities: [
+        "Hacer preguntas importantes",
+        "Listar funciones necesarias",
+        "Aclarar que no hara la app por ahora",
+      ],
+      roles: ["Usuarios", "Analista", "Coordinador del proyecto"],
+      tools: ["Entrevistas", "Listas de requisitos", "Historias de usuario"],
+      metrics: [
+        "La lista de funciones esta clara",
+        "Las dudas mas importantes quedaron resueltas",
+      ],
+      deliverable: "Una lista entendible de requisitos y necesidades.",
+      question: "Pregunta guia: que necesita exactamente la persona usuaria?",
+      funExample: "Ejemplo: la app debe mostrar tareas, fechas de entrega y recordatorios.",
+      image:
+        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+      imageAlt: "Personas revisando notas y requisitos de un proyecto.",
     },
     {
       id: "diseno",
-      name: "3. Fase de Diseño Arquitectónico (System Architecture & Design)",
-      description: "Si el SRS documenta el 'Qué requiere', el DDS (Documento de Diseño) dictamina rígidamente el 'Cómo se programará'. Esta etapa se bifurca en Módulos de Alto Nivel (HLD) para establecer la macro-estructura (Topología en la Nube, interconexiones de APIs), y el Diseño de Bajo Nivel (LLD), determinando el modelo Entidad-Relación criptográfico, los Wireframes en altísima fidelidad de la interfaz UI, y el esqueleto de las clases programáticas y métodos operacionales.",
-      roles: ["Solutions Architect", "Señor UI/UX Designer", "Database Administrator (DBA)"],
-      tools: ["Figma Design Systems", "AWS/Azure Modeling", "Balsamiq/Lucidchart"],
-      metrics: ["Nivel de Escalabilidad Teórica Calculada", "Número Simulado de Cuellos de Botella"],
-      deliverable: "Design Document Specification (DDS) Técnico.",
+      icon: "Palette",
+      name: "3. Diseno",
+      shortDesc: "Imaginar como se vera y como funcionara",
+      description:
+        "En esta fase se dibujan pantallas, botones, rutas y partes internas del sistema. Es el momento de pensar en una app facil de usar y tambien facil de construir.",
+      activities: [
+        "Dibujar pantallas o bocetos",
+        "Definir colores, botones y menus",
+        "Organizar como se conectan las partes",
+      ],
+      roles: ["Disenador", "Desarrollador", "Persona que revisa la idea"],
+      tools: ["Bocetos", "Wireframes", "Figma o papel"],
+      metrics: [
+        "Las pantallas se entienden rapido",
+        "La navegacion parece simple y ordenada",
+      ],
+      deliverable: "Un diseno visual y tecnico de la aplicacion.",
+      question: "Pregunta guia: como hacemos que la app sea clara y agradable?",
+      funExample: "Ejemplo: se decide que el boton de entregar tarea sea grande y facil de encontrar.",
+      image:
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+      imageAlt: "Bocetos y pantallas de una aplicacion en proceso de diseno.",
     },
     {
       id: "desarrollo",
-      name: "4. Fase de Codificación Industrial (Development & Implementation)",
-      description: "Es indiscutiblemente la porción termodinámicamente más larga de recursos de la línea de ensamblaje del SDLC. Siguiendo el DDS minucioso, los ingenieros construyen cada algoritmo subyacente empleando paradigmas como POO u Orientado a Eventos. La estricta adopción de manuales de estándares de programación de la compañía, así como el revisionismo grupal mediante 'Pull Requests', detiene el avance de inyecciones de código sucio, redundante o ineficiente. Se usan ramas en Git para aislar y construir asíncronamente.",
-      roles: ["Señor Frontend Engineer", "Backend Machine Developer", "DevOps Base Architect"],
-      tools: ["Visual Studio Code/IntelliJ", "Git / GitHub / GitLab Repository", "Docker Engine"],
-      metrics: ["Volumen Global de Líneas de Código (LOC)", "Velocity (Puntos de Historia Agile Scrum)"],
-      deliverable: "Módulos de Código Fuente Ejecutables y Compilables Centralizados.",
+      icon: "Code2",
+      name: "4. Desarrollo",
+      shortDesc: "Convertir el diseno en una app real",
+      description:
+        "Aqui el equipo programa cada parte del proyecto. Lo que antes era una idea y luego un boceto empieza a funcionar de verdad en el computador o en el celular.",
+      activities: [
+        "Crear pantallas y botones",
+        "Guardar y mostrar informacion",
+        "Unir todas las partes del sistema",
+      ],
+      roles: ["Frontend", "Backend", "Equipo tecnico"],
+      tools: ["Editor de codigo", "Git", "Frameworks y librerias"],
+      metrics: [
+        "Cada modulo nuevo funciona",
+        "El codigo se mantiene ordenado y entendible",
+      ],
+      deliverable: "La primera version funcional del software.",
+      question: "Pregunta guia: como construimos la app sin perder el orden?",
+      funExample: "Ejemplo: ya puedes iniciar sesion, ver tus tareas y marcar una como terminada.",
+      image:
+        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80",
+      imageAlt: "Persona programando frente a una pantalla con codigo.",
     },
     {
       id: "pruebas",
-      name: "5. Fase Crítica de Aseguramiento de Calidad (Rigorous Testing/QA)",
-      description: "Antes de lanzar el software, se expone a rigurosos marcos de asalto para destruir la ambigüedad. Los ingenieros de QA verifican mecánicamente las funcionalidades y los 'Edge Cases' contra lo estipulado en las métricas SRS. Se hacen rondas progresivas: Unit Testing para funciones puras; Integration Testing para validar la amalgama de módulos; System Testing para corroborar comportamiento global, y User Acceptance Testing (UAT) donde usuarios finales simulados aprueban su paso.",
-      roles: ["Automation QA Engineer", "Manual Tester", "Penetration Tester"],
-      tools: ["Selenium WebDriver", "Jest / Cypress / Appium", "Postman / JMeter"],
-      metrics: ["Cobertura Absoluta de Código (%)", "Densidad Específica de Defectos Inyectados/Encontrados"],
-      deliverable: "Un Matriz de Bugs Resolvidos y Version Candidata Autorizada para Despliegue.",
+      icon: "ShieldCheck",
+      name: "5. Pruebas",
+      shortDesc: "Revisar si todo funciona como se espera",
+      description:
+        "En esta fase se busca que la app no falle. Se revisan botones, pantallas, formularios y mensajes para comprobar que todo haga lo correcto y sea facil de usar.",
+      activities: [
+        "Probar cada funcion",
+        "Encontrar errores o comportamientos raros",
+        "Corregir antes de publicar",
+      ],
+      roles: ["Probador", "Desarrollador", "Usuarios de prueba"],
+      tools: ["Listas de chequeo", "Pruebas manuales", "Pruebas automaticas"],
+      metrics: [
+        "Los errores encontrados se corrigen",
+        "La app responde como se esperaba",
+      ],
+      deliverable: "Una version revisada y lista para salir.",
+      question: "Pregunta guia: que podria salir mal y como lo corregimos?",
+      funExample: "Ejemplo: un estudiante prueba la app y nota que un boton no guarda la tarea. El equipo lo arregla.",
+      image:
+        "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
+      imageAlt: "Personas revisando el funcionamiento de una aplicacion.",
     },
     {
       id: "implementacion",
-      name: "6. Módulo Despliegue Producción (Deployment & Release)",
-      description: "La joya de la corona metodológica. Tras alcanzar un código 'Estable Dorado', se migra la información y topología al servidor que expondrá el servicio a los clientes globales. Ya que un despliegue abrupto puede derribar servidores por choques de entornos o 'Traffic Spikes' , la industria madura ejecuta esquemas 'Blue-Green' o 'Canary Release' enviando el producto escalonadamente desde 5% hasta el 100% de la población de usuarios.",
-      roles: ["Chief Release Manager", "Infra/DevOps Engineer", "Cloud Security Admin"],
-      tools: ["Jenkins Pipelines", "GitHub Actions CI", "Kubernetes Clusters", "AWS EC2/Lambda"],
-      metrics: ["Downtime Absoluto Tolerado", "Deployment Frequency por Hora/Semana"],
-      deliverable: "Ecosistema Funcional y Abierto 100% (Go-Live).",
+      icon: "Rocket",
+      name: "6. Implementacion",
+      shortDesc: "Poner la app en manos de las personas",
+      description:
+        "Aqui la app se publica para que otras personas la usen. El equipo cuida que todo se vea bien, cargue rapido y no se rompa al pasar del ambiente de pruebas al real.",
+      activities: [
+        "Subir la app a internet o al servidor",
+        "Verificar que abra bien",
+        "Acompanar los primeros usos reales",
+      ],
+      roles: ["Equipo tecnico", "Soporte", "Responsable de lanzamiento"],
+      tools: ["Servidores", "Plataformas de despliegue", "Monitoreo inicial"],
+      metrics: [
+        "Las personas pueden entrar sin problemas",
+        "La version publicada es estable",
+      ],
+      deliverable: "La aplicacion disponible para sus usuarios.",
+      question: "Pregunta guia: como publicamos la app sin sorpresas?",
+      funExample: "Ejemplo: la plataforma de tareas ya puede abrirse desde los computadores del colegio.",
+      image:
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+      imageAlt: "Servidores y despliegue de una aplicacion en linea.",
     },
     {
       id: "mantenimiento",
-      name: "7. Estabilización y Mantenimiento Evolutivo (Software Maintenance)",
-      description: "Lejos de ser el final, esta fase dicta la esperanza de vida biológica teórica de la aplicación. Ocurren los mantenimientos preventivos previendo la sobrecarga de datos y el mantenimiento Correctivo que ataja bugs residuales, exóticos o post-lanzamiento que escaparon por el escudo del QA. Adicionalmente, comienza el ciclo derivado para integrar Nuevas Versiones que evolucionan el proyecto en paralelo a las cambiantes necesidades de la junta de accionistas del mercado global.",
-      roles: ["L3 Support Engineer", "SysAdmin Monitor", "Developer"],
-      tools: ["Zendesk / Jira Service", "Datadog / New Relic", "Sentry Error Tracking"],
-      metrics: ["MTTR (Tiempo Medio Crítico para Resolución)", "Service Level Agreements (SLAs)"],
-      deliverable: "Módulos de Parches (Patches), Revisiones de Seguridad y Versiones Menores (1.1, 1.2).",
-    }
+      icon: "Wrench",
+      name: "7. Mantenimiento",
+      shortDesc: "Arreglar, cuidar y mejorar la app con el tiempo",
+      description:
+        "Despues del lanzamiento, el trabajo sigue. Se corrigen errores pequenos, se escuchan sugerencias y se agregan mejoras para que la aplicacion siga siendo util.",
+      activities: [
+        "Escuchar comentarios de usuarios",
+        "Corregir errores nuevos",
+        "Agregar mejoras utiles",
+      ],
+      roles: ["Soporte", "Desarrollo", "Usuarios"],
+      tools: ["Reportes", "Seguimiento de errores", "Nuevas versiones"],
+      metrics: [
+        "Las dudas se atienden rapido",
+        "Las mejoras resuelven problemas reales",
+      ],
+      deliverable: "Parches, mejoras y nuevas versiones de la app.",
+      question: "Pregunta guia: que podemos mejorar ahora que la gente ya la usa?",
+      funExample: "Ejemplo: luego de usar la app, piden un modo oscuro y recordatorios mas visibles.",
+      image:
+        "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
+      imageAlt: "Persona dando soporte y mejorando un sistema desde el computador.",
+    },
   ],
   models: [
     {
       id: "cascada",
-      name: "El Arcaico, Fiable Modelo Cascada (Waterfall Model)",
-      description: "La materialización originaria de la ingeniería civil traída a los sistemas informáticos en los 1970s. Consta de una serie de pasos inflexibles interrelacionados como cascadas descendentes hidráulicas. Aquí el equipo completa un 100% de la Fase A, revisa sus puertas documentales, y recién transita inamoviblemente y definitivamente a la Fase B. Nunca regresando en el tiempo ni re-revisando lo acordado.",
-      pros: ["Su estructura es la más cristalina y predecible imaginable para auditoría.", "El contrato financiero y cronológico es teóricamente invariable.", "El diseño documental final es casi académico por su masiva rigurosidad literaria."],
-      cons: ["Es prohibitivo tecnológicamente el intentar corregir un error fundacional hallado meses más tarde.", "El cliente final jamás observa ni manipula nada virtualmente operativo hasta el abismo final del proyecto.", "Aislado y completamente rígido respecto al dinamismo contemporáneo."],
-      bestFor: "Software Inmutable (Desarrollo Aeroespacial Militar, Arquitecturas Legacy Gubernamentales o Repositorios Financieros donde los requisitos están cristalizados hace décadas)."
+      name: "Cascada",
+      simpleIdea: "Es como bajar una escalera: terminas un paso y luego sigues al siguiente.",
+      description:
+        "Es un modelo ordenado donde el equipo avanza fase por fase. Primero planea, despues analiza, luego disena y asi sucesivamente.",
+      pros: [
+        "Es facil de entender y de organizar.",
+        "Sirve cuando el proyecto esta muy claro desde el inicio.",
+        "Ayuda a documentar bien cada paso.",
+      ],
+      cons: [
+        "Cuesta mas cambiar ideas a mitad del camino.",
+        "El usuario ve resultados utiles mas tarde.",
+        "No es tan flexible si aparecen nuevas necesidades.",
+      ],
+      bestFor: "Proyectos pequenos o con reglas muy claras desde el comienzo.",
     },
     {
       id: "agil",
-      name: "El Modelo Dinámico Ágil (Agile Software Framework)",
-      description: "Una deconstrucción antagónica del modelo Cascada. El Agile destroza el inmenso bloque de software singular del ciclo SDLC masivo en sub-ciclos iterativos e hipersónicos conocidos rítmicamente como 'Sprints' (habitualmente de entre 1 a 4 semanas operativas). El cliente evalúa 'Trozos Funcionales' que operan por completo, corrigiendo rumbos y dictando evoluciones en cada iteración constante, promoviendo la adaptabilidad extrema.",
-      pros: ["Absoluta y total adaptación instantánea frente a caprichos o cambios volátiles de demanda de mercado.", "Implicación transversal del cliente para re-direccionamiento diario.", "Incluso si el proyecto general fuese a ser cancelado prematuramente, sobreviven incrementos de software funcionales útiles."],
-      cons: ["Virtualmente imposible anclar presupuestos de capital fijo ni duraciones exactas al firmar un contrato inicial.", "Exige una dependencia fanática con desarrolladores Senior extremadamente capaces, la documentación a menudo pasa a un temible segundo plano."],
-      bestFor: "Organizaciones Tecnológicas Nativas (Startups Disruptoras, Modelos SaaS en Nube Continua, Innovación Dinámica Móvil)."
+      name: "Agil",
+      simpleIdea: "Es como construir por partes pequenas, mostrar avances y mejorar seguido.",
+      description:
+        "El trabajo se divide en ciclos cortos. El equipo entrega avances rapidos, escucha comentarios y ajusta lo necesario en cada vuelta.",
+      pros: [
+        "Permite cambiar de rumbo con rapidez.",
+        "Los usuarios pueden opinar durante el proceso.",
+        "Muestra resultados utiles en poco tiempo.",
+      ],
+      cons: [
+        "Necesita mucha comunicacion constante.",
+        "Puede ser mas dificil calcular el tiempo exacto del proyecto completo.",
+        "Si no hay orden, el equipo puede perder enfoque.",
+      ],
+      bestFor: "Apps que cambian rapido o proyectos donde se quiere mejorar poco a poco.",
     },
     {
       id: "v-model",
-      name: "Modelo en V (Verificación Paralela Estricta)",
-      description: "Una mutación extremadamente perfeccionista y validada del modelo Cascada. A fin de abatir la nula cobertura de testeo que azota a este último en sus inicios, el Modelo-V (Validation & Verification) postula la creación de dos ejes divergentes en forma de 'V'. Siendo el lado izquierdo la programación puramente en declive hacia códigos de bajo nivel, e instantáneamente reflejando una correspondencia horizontal paralela de Testing para CADA fase en el lado derecho. (Si yo elaboro los Requisitos, construyo Tests de Aceptación paralelos a la par).",
-      pros: ["Eleva la certidumbre de erradicación temprana de problemas al crear Test Cases años antes de codear.", "Suma extremada rigurosidad corporativa y orden militar al desarrollo corporativo."],
-      cons: ["Sufre por igual la dolorosa inflecibilidad extrema frente a los requisitos dinámicos."],
-      bestFor: "Sectores Vitales y Biomédicos de Alta Ponderación de Daño (Aviónica de vuelos comerciales, Robótica hospitalaria o Sistemas Críticos de Defensa Nuclear)."
+      name: "Modelo en V",
+      simpleIdea: "Cada parte que se diseña tambien piensa desde temprano como se va a probar.",
+      description:
+        "Se parece a Cascada, pero con una diferencia clave: por cada etapa de construccion existe una forma de prueba relacionada.",
+      pros: [
+        "Ayuda a planear las pruebas desde el principio.",
+        "Da mucho orden en proyectos que no pueden fallar facilmente.",
+        "Reduce sorpresas al final si se sigue bien.",
+      ],
+      cons: [
+        "Tambien puede ser rigido si cambian los requisitos.",
+        "Pide bastante organizacion y documentacion.",
+      ],
+      bestFor: "Sistemas donde probar bien es tan importante como construir, por ejemplo salud o transporte.",
     },
     {
       id: "espiral",
-      name: "El Analítico Modelo en Espiral Iterativa (Spiral Model)",
-      description: "Formulado por Barry Boehm. Constituye la amalgama suprema entre ciclos iterativos pequeños (Agile) atados irrevocablemente a una severa maquinaria burocrática de Detección e Inmunidad Proactiva contra Riesgos Sistémicos (Cascada V). El software orbita radialmente en 4 cuadrantes (Identificar->Resolver Riesgos->Desarrollar->Planificar Lazo Siguiente) incrementando en madurez con cada rotación de la espiral.",
-      pros: ["Brinda la plataforma más avanzada construida por la humanidad para absorber cambios continuos pero sin poner en peligro cataclísmico la base por la inestabilidad de errores.", "Apertura para requisitos monumentales extraídos iterativamente bajo red de seguridad.", "Prototipado ininterrumpido a gran escalabilidad visual."],
-      cons: ["Inexplicablemente caro y metodológicamente denso. Complejidad aplastante para administrar si el Project Manager no domina estadísticas predictivas.", "Depende desmesuradamente de Gurús Expertos en Análisis Predictivo y de Riesgo para subsistir."],
-      bestFor: "Experimentación Aeroespacial Compleja o Plataformas Computacionales Gigantes de inmensa R&D sin precedencia pasada de éxito comprobado."
-    }
+      name: "Espiral",
+      simpleIdea: "Se mejora en vueltas: planear, revisar riesgos, construir y volver a planear.",
+      description:
+        "Este modelo mezcla iteraciones con analisis de riesgos. Cada ciclo ayuda a aprender mas sobre el proyecto antes de crecerlo.",
+      pros: [
+        "Es util cuando el proyecto es grande o incierto.",
+        "Permite detectar riesgos antes de avanzar demasiado.",
+        "Da espacio para crear prototipos y aprender.",
+      ],
+      cons: [
+        "Puede ser mas complejo de explicar y administrar.",
+        "Requiere experiencia para usarlo bien.",
+      ],
+      bestFor: "Proyectos grandes o nuevos donde todavia hay muchas dudas que resolver.",
+    },
   ],
   devops: {
-    title: "La Evolución Metodológica al Bucle Continuo: DevOps & La Cultura DevSecOps",
-    desc: "A medida que la nube madura, el concepto de un Ciclo Lineal aislado empieza a verse sobrepasado. DevOps no es un simple conjunto de herramientas, es un cambio filosófico corporativo agresivo. Derriba los legendarios muros de silencio existentes desde los años 80 entre los programadores 'Aislados' construyendo código y los administradores Operacionistas 'IT' aterrorizados de desplegarlo. Transforma las rigurosas fases estáticas, integrándolas en verdaderos flujos automatizados de ensamblaje circular e infinito.",
+    title: "DevOps explicado facil",
+    desc: "DevOps es una forma de trabajar donde quienes crean el software y quienes lo publican colaboran todo el tiempo. La meta es construir, probar, lanzar y mejorar sin esperar hasta el final.",
+    analogy:
+      "Piensa en un videojuego que recibe mejoras constantes. DevOps busca que esas mejoras salgan rapido, bien revisadas y sin romper lo que ya funcionaba.",
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Equipo tecnologico colaborando frente a varias pantallas.",
+    videoTitle: "Video recomendado para entender DevOps",
+    videoUrl: "https://www.youtube.com/embed/c1VjHJm7t34?rel=0",
+    cycle: ["Planear", "Programar", "Construir", "Probar", "Publicar", "Usar", "Observar", "Mejorar"],
+    benefits: ["Cambios mas rapidos", "Menos errores al final", "Mejor trabajo en equipo"],
+    points: [
+      {
+        title: "Colaboracion constante",
+        text: "Desarrollo y operaciones trabajan como un solo equipo y comparten responsabilidades.",
+      },
+      {
+        title: "Pruebas frecuentes",
+        text: "Cada cambio pequeno se revisa pronto para detectar errores antes de que crezcan.",
+      },
+      {
+        title: "Mejoras continuas",
+        text: "Las nuevas versiones salen en pasos pequenos y mas seguros.",
+      },
+    ],
     principles: [
       {
-        title: "Integración Biológica Continua (Continuous Integration - CI)",
-        desc: "Práctica de validación radicalizada donde cada vez que un Nodo de desarrollador 'mergea' o sube un ápice de código al árbol general, ejércitos de bots virtuales compilan algorítmicamente y atacan inmediatamente ese fragmento con 10,000 pruebas. Destruyendo el temido paradigma de la 'Noche antes del lanzamiento para ver si algo engrana'."
+        icon: "Users",
+        title: "Trabajar juntos",
+        desc: "Las personas que programan y las que cuidan la publicacion del sistema no van por caminos separados. Se comunican y resuelven problemas en equipo.",
+        example: "Ejemplo: si una app falla al subir una tarea, el programador y quien cuida el servidor revisan el problema al mismo tiempo.",
       },
       {
-        title: "Entrega Continua Total (Continuous Delivery/Deployment - CD)",
-        desc: "Al superar todos los validadores de la Integración (CI), el sistema no deposita el código inerte; este autodespliega y sincroniza contenedores Docker orquestados, transportando mágicamente ese binario desde la laptop del programador a un Cluster Productivo Internacional replicable en cinco minutos con literalmente un solo clic de confirmación."
+        icon: "TestTube2",
+        title: "Probar seguido",
+        desc: "Cada cambio pequeno se revisa rapido para no descubrir errores enormes al final del proyecto.",
+        example: "Ejemplo: al agregar un boton nuevo, el sistema corre pruebas antes de dejarlo pasar a produccion.",
       },
       {
-        title: "El Imperativo Paramilitar: DevSecOps ('Estrategia Shift-Left')",
-        desc: "Con el cibercrimen industrial automatizado, la Seguridad informática ('Sec') ya no puede subsistir como la penúltima fase obligada del SDLC. DevSecOps obliga un mandato conocido como 'Moverse hacia la izquierda' (Shift-Left). Esto implica inyectar motores heurísticos SAST e IA buscando anomalías, puertas traseras (Backdoors)  o inyecciones SQL que rechina directamente mientras el programador aún va tecleando sobre su IDE, garantizando escudos fortificados antes siquiera de que nazca el error general."
-      }
-    ]
+        icon: "Rocket",
+        title: "Publicar en pasos pequenos",
+        desc: "En vez de hacer un cambio gigante de una sola vez, las mejoras salen poco a poco y con mas control.",
+        example: "Ejemplo: primero ve la novedad un grupo pequeno de estudiantes y luego toda la institucion.",
+      },
+      {
+        icon: "ShieldCheck",
+        title: "Pensar en seguridad desde el inicio",
+        desc: "La seguridad no se deja para el final. Se revisan permisos, contrasenas y datos sensibles desde las primeras versiones.",
+        example: "Ejemplo: el equipo protege las cuentas de estudiantes desde el primer prototipo.",
+      },
+    ],
   },
   example: {
-    title: "Estudio de Caso Macro: Arquitectura Institucional para Banco de Altísima Fidelidad",
-    description: "Visualizemos la transfiguración de estas teorías hacia el mundo inminente real. Así desglosaría metodológicamente una compañía nativa FinTech (Tecnología Financiera), la creación de un ecosistema en nube sujeto a estándares bancarios internacionales utilizando las filosofías V-Model complementadas de DevOps ininterrumpido:",
+    title: "Caso practico: una app para la biblioteca escolar",
+    description:
+      "Imagina que un colegio quiere una app sencilla para que los estudiantes vean que libros hay, reserven uno y reciban recordatorios de devolucion.",
+    gallery: [
+      {
+        title: "Una necesidad cercana",
+        caption: "La biblioteca necesita menos filas y una manera mas facil de encontrar libros.",
+        image:
+          "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80",
+        imageAlt: "Biblioteca con estanterias llenas de libros.",
+      },
+      {
+        title: "Una solucion digital",
+        caption: "La idea es que cualquier estudiante pueda buscar, reservar y devolver libros desde una app clara.",
+        image:
+          "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
+        imageAlt: "Persona usando libros y tecnologia en un entorno educativo.",
+      },
+    ],
+    summary: [
+      {
+        title: "Problema",
+        text: "Muchos estudiantes no saben que libros estan disponibles y pierden tiempo preguntando uno por uno.",
+      },
+      {
+        title: "Solucion",
+        text: "Una app que permita buscar libros, reservarlos y ver la fecha de devolucion.",
+      },
+      {
+        title: "Resultado esperado",
+        text: "Mas orden, menos filas y una biblioteca mas facil de usar para todos.",
+      },
+    ],
     steps: [
-      { phase: "Iteración Inicial L1", title: "Aislamiento Analítico Financiero y Blindaje Normativo Global", detail: "Analistas y abogados rígidamente delimitan que el engranaje del App resista el pesado protocolo mundial transaccional ISO 20022. La matriz operativa proyecta techos funcionales que superen al menos 15.000.000 Millones TPS de latencia. Se documenta cumplimiento irreversible a los acrónimos de ley europea en la firma GDPR y Basilea III." },
-      { phase: "Iteración de Base L2", title: "Arquitectura HLD Cloud-Agnostic", detail: "El Panel de Arquitectos de la Nube reescribe un esbozo sobre Clústeres Kubernetes independientes. Aíslan intencionadamente las bases computacionales en nodos de AWS, mientras exilian el Core Crítico Ledger con bases de encriptación de grado militar AES-256 en servidores locales resguardados por Air-Gapped Networks (Sistemas físicos sellados para hackeos de extracción remota masiva)." },
-      { phase: "Construcción L3", title: "Líneas de Código bajo Supervisión SAST Dinámica", detail: "Decenas de escuadrones programadores atacan el Backend puro orquestado sobre Golang (Google Go) debido a su concurrencia perfecta. Mientras redactan, los IDE corren un scanner semántico bloqueándoles si intentan inyectar variables susceptibles a flujos SQL-Map en el pool." },
-      { phase: "Resiliencia Estructural L4", title: "Validación de Estabilidad Cero Absoluta (Chaos Engineering)", detail: "Ejércitos de Testing no usan humanos. Instancian Bots con heurística aleatoria que inyectan simulaciones desastrosas de redes bancarias corruptas e inestabilidad global en los cables transoceánicos, para asegurar estrictamente que el sistema mantenga firmeza asimétrica transaccional garantizando operaciones consistentes y recuperables de la data." },
-      { phase: "Lanzamiento Nuclear L5", title: "Despliegue Asimétrico Canary Monitorizado AI", detail: "La aplicación jamás se lanza hacia las masas del 100% de la noche a la mañana. Se distribuye sigilosamente solo ante 1% de cuentahabientes considerados usuarios VIP silenciosos. Un clúster de Deep-Learning en Datadog devora logs gigantes radiografiando desviaciones mínimas antes que el Director pulse la perilla 'Roll-Out' universal liberando el App en todo occidente." }
-    ]
+      {
+        phase: "Paso 1",
+        title: "Hablar con la biblioteca",
+        task: "Entender la necesidad principal",
+        detail: "El equipo conversa con la bibliotecaria y con estudiantes para descubrir que hace falta: buscar libros rapido, reservarlos y recordar la devolucion.",
+        result: "Se define una meta clara para el proyecto.",
+      },
+      {
+        phase: "Paso 2",
+        title: "Elegir las funciones clave",
+        task: "Decidir que hara la app",
+        detail: "Se hace una lista corta de funciones utiles: buscar por titulo, ver si un libro esta disponible, reservar y recibir avisos.",
+        result: "Queda una lista simple de requisitos.",
+      },
+      {
+        phase: "Paso 3",
+        title: "Dibujar la experiencia",
+        task: "Crear pantallas faciles de entender",
+        detail: "Se preparan bocetos con botones grandes, menus claros y un buscador visible para que cualquier estudiante pueda usar la app sin ayuda.",
+        result: "Ya existe una propuesta visual facil de revisar.",
+      },
+      {
+        phase: "Paso 4",
+        title: "Programar la primera version",
+        task: "Construir la app funcional",
+        detail: "El equipo crea el catalogo, el sistema de reservas y la vista de prestamos activos para que la app ya pueda usarse.",
+        result: "Aparece un primer prototipo util.",
+      },
+      {
+        phase: "Paso 5",
+        title: "Probar con estudiantes reales",
+        task: "Detectar errores y confusiones",
+        detail: "Un pequeno grupo de estudiantes usa la app. Si algo no se entiende o no funciona, el equipo lo corrige antes del lanzamiento.",
+        result: "La app se vuelve mas clara y estable.",
+      },
+      {
+        phase: "Paso 6",
+        title: "Publicar en el colegio",
+        task: "Poner la app a disposicion de todos",
+        detail: "La aplicacion se instala o publica para que pueda abrirse desde los computadores del colegio o desde celulares autorizados.",
+        result: "La solucion ya llega a las personas usuarias.",
+      },
+      {
+        phase: "Paso 7",
+        title: "Escuchar y mejorar",
+        task: "Mantener la app viva",
+        detail: "Despues del lanzamiento, el colegio pide nuevas ideas como favoritos, recomendaciones o avisos mas visibles. El equipo sigue mejorando la app.",
+        result: "El proyecto sigue creciendo segun necesidades reales.",
+      },
+    ],
+  },
+  sources: {
+    title: "Fuentes y recursos",
+    items: [
+      {
+        name: "IBM - Software Development Life Cycle",
+        desc: "Referencia general para entender que es el SDLC y como se divide en etapas.",
+        url: "https://www.ibm.com/think/topics/software-development-life-cycle",
+      },
+      {
+        name: "Atlassian - DevOps",
+        desc: "Guia introductoria sobre DevOps, colaboracion y entrega continua.",
+        url: "https://www.atlassian.com/devops",
+      },
+      {
+        name: "AWS - What is DevOps?",
+        desc: "Explicacion sencilla sobre la cultura DevOps y sus beneficios.",
+        url: "https://aws.amazon.com/devops/what-is-devops/",
+      },
+      {
+        name: "Video recomendado: Fases del SDLC",
+        desc: "Apoyo audiovisual para reforzar el tema de las fases.",
+        url: "https://youtu.be/TLVDBAo1aEY",
+      },
+      {
+        name: "Video recomendado: DevOps para principiantes",
+        desc: "Apoyo audiovisual para explicar DevOps de forma mas clara.",
+        url: "https://youtu.be/c1VjHJm7t34",
+      },
+    ],
   },
   authors: {
-    title: "Equipo de Estudiantes",
-    desc: "Proyecto universitario desarrollado por estudiantes del curso Gestión del conocimiento.",
+    title: "Equipo de estudiantes",
+    desc: "Proyecto educativo desarrollado por estudiantes del curso Gestion del conocimiento.",
     team: [
-      { name: "Samuel Esteban Cortes Acosta", role: "Líder de Proyecto / Documentación", img: "/autores/Samuel.jpeg", desc: "Encargado de la estructura metodológica, investigación de las fuentes y coordinación general del equipo." },
-      { name: "Duvan Andres Gaitan Pedraza", role: "Desarrollador Frontend", img: "/autores/Duvan.jpeg", desc: "Responsable de la codificación y estructuración visual de la plataforma interactiva." },
-      { name: "Miguel Ángel Acosta Torres", role: "Documentación y Aseguramiento", img: "/autores/Miguel.jpeg", desc: "Apoyo en la validación de requerimientos, control de calidad y redacción técnica de Fases y Modelos." },
-      { name: "Juan Andrés Fonseca Barón", role: "Desarrollo y Pruebas", img: "/autores/Juan.jpeg", desc: "Soporte en desarrollo funcional de la plataforma y testing de las rutas de usuario." }
-    ]
-  }
+      {
+        name: "Samuel Esteban Cortes Acosta",
+        role: "Lider de proyecto / Documentacion",
+        img: "/autores/Samuel.jpeg",
+        desc: "Encargado de la estructura metodologica, investigacion de fuentes y coordinacion general del equipo.",
+      },
+      {
+        name: "Duvan Andres Gaitan Pedraza",
+        role: "Desarrollador frontend",
+        img: "/autores/Duvan.jpeg",
+        desc: "Responsable de la codificacion y de la estructuracion visual de la plataforma interactiva.",
+      },
+      {
+        name: "Miguel Angel Acosta Torres",
+        role: "Documentacion y aseguramiento",
+        img: "/autores/Miguel.jpeg",
+        desc: "Apoyo en validacion de requerimientos, control de calidad y redaccion de contenidos.",
+      },
+      {
+        name: "Juan Andres Fonseca Baron",
+        role: "Desarrollo y pruebas",
+        img: "/autores/Juan.jpeg",
+        desc: "Soporte en desarrollo funcional de la plataforma y pruebas de las rutas de usuario.",
+      },
+    ],
+  },
 };

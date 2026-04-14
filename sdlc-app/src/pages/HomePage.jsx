@@ -6,13 +6,13 @@ import { BookOpen, RefreshCw, Network, Rocket, Building, Users, Gamepad2 } from 
 import { SectionContainer, SectionHeader } from '../components/layout/SectionContainer';
 
 const portalLinks = [
-  { path: "/concepto", name: "Fundamentos", icon: BookOpen, desc: "Bases teóricas y justificación económica del ciclo." },
-  { path: "/fases", name: "Fases Técnicas", icon: RefreshCw, desc: "Desglose profundo de QA, Codificación, Arquitectura." },
-  { path: "/modelos", name: "Modelos Formales", icon: Network, desc: "Waterfall, Agile, V-Model y metodologías evolutivas." },
-  { path: "/devops", name: "DevSecOps", icon: Rocket, desc: "El cambio de paradigma continuo y seguridad Shift-Left." },
-  { path: "/ejemplo", name: "Caso Práctico", icon: Building, desc: "Construcción de un Sistema Bancario Enterprise." },
-  { path: "/juegos", name: "Zona Interactiva", icon: Gamepad2, desc: "Pon a prueba tus conocimientos con mini-juegos." },
-  { path: "/autores", name: "Comité Creador", icon: Users, desc: "Ingenieros y Arquitectos detrás del diseño." }
+  { path: "/concepto", name: "Fundamentos", icon: BookOpen, desc: "Aprende que es el SDLC y por que ayuda a organizar proyectos." },
+  { path: "/fases", name: "Fases", icon: RefreshCw, desc: "Descubre que pasa desde la idea inicial hasta las mejoras finales." },
+  { path: "/modelos", name: "Modelos", icon: Network, desc: "Compara distintas formas de organizar el desarrollo del software." },
+  { path: "/devops", name: "DevOps", icon: Rocket, desc: "Entiende como se prueba, publica y mejora software de forma continua." },
+  { path: "/ejemplo", name: "Caso Practico", icon: Building, desc: "Mira un ejemplo cercano basado en una app para la biblioteca escolar." },
+  { path: "/juegos", name: "Zona Interactiva", icon: Gamepad2, desc: "Repasa conceptos con actividades pensadas para aprender jugando." },
+  { path: "/autores", name: "Autores", icon: Users, desc: "Conoce al equipo estudiantil que construyo esta experiencia." }
 ];
 
 export function HomePage() {
@@ -22,7 +22,7 @@ export function HomePage() {
       <Hero />
       
       <SectionContainer id="portal" className="bg-surface/30">
-        <SectionHeader title="El Hub del Conocimiento" subtitle="Explora la Plataforma" />
+        <SectionHeader title="Explora y aprende" subtitle="Recorrido guiado" />
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {portalLinks.map((link, idx) => {
             const Icon = link.icon;
@@ -34,7 +34,7 @@ export function HomePage() {
                 <h3 className="text-2xl font-bold text-white mb-2">{link.name}</h3>
                 <p className="text-slate-400 text-sm">{link.desc}</p>
                 <div className="mt-6 flex items-center text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                  Acceder al Módulo &rarr;
+                  Entrar a esta parte &rarr;
                 </div>
               </Link>
             )

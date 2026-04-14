@@ -25,7 +25,7 @@ export function Hero() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 w-fit">
             <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-slate-300">Educativo Premium</span>
+            <span className="text-sm font-medium text-slate-300">Guia visual para estudiantes</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
@@ -83,8 +83,8 @@ export function Hero() {
                 >
                   <div className="p-2 bg-primary/20 rounded-lg"><Terminal className="w-5 h-5 text-primary" /></div>
                   <div>
-                    <div className="text-sm font-bold">Despliegue Exitoso</div>
-                    <div className="text-xs text-slate-400">FASE: Implementación</div>
+                    <div className="text-sm font-bold">Aprendizaje en marcha</div>
+                    <div className="text-xs text-slate-400">Idea - diseno - prueba</div>
                   </div>
                 </motion.div>
                 

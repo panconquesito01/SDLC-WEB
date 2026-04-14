@@ -4,14 +4,14 @@ import { RefreshCw, ArrowLeft, HeartPulse, Skull } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 const wordList = [
-  { word: "CASCADA", hint: "Modelo secuencial estricto." },
-  { word: "AGILE", hint: "Modelo iterativo e incremental." },
-  { word: "PRUEBAS", hint: "Fase para detectar bugs." },
-  { word: "REQUISITOS", hint: "Fase de análisis y contrato con cliente." },
-  { word: "DESPLIEGUE", hint: "Llevar el código a producción." },
-  { word: "SCRUM", hint: "Framework popular dentro de Agile." },
-  { word: "DEVOPS", hint: "Une desarrollo y operaciones." },
-  { word: "CALIDAD", hint: "El QA se asegura de la ___." }
+  { word: "CASCADA", hint: "Modelo donde se avanza paso a paso." },
+  { word: "AGIL", hint: "Modelo flexible que mejora seguido." },
+  { word: "PRUEBAS", hint: "Fase donde se revisa si la app funciona." },
+  { word: "REQUISITOS", hint: "Lista de cosas que la app necesita hacer." },
+  { word: "DESPLIEGUE", hint: "Momento de publicar la app." },
+  { word: "DISENO", hint: "Momento de decidir pantallas y botones." },
+  { word: "DEVOPS", hint: "Une programacion, pruebas y publicacion." },
+  { word: "CALIDAD", hint: "Lo que buscamos cuando una app funciona bien." }
 ];
 
 const MAX_MISTAKES = 6;
@@ -103,7 +103,7 @@ export function HangmanGame({ onBack }) {
         ) : gameWon ? (
           <motion.div key="hangman-win" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="glass-effect rounded-[3rem] p-12 lg:p-16 border border-emerald-500/30 text-center shadow-2xl">
              <HeartPulse className="w-24 h-24 mx-auto text-emerald-400 mb-8 drop-shadow-[0_0_30px_rgba(16,185,129,0.5)]" />
-             <h3 className="text-4xl font-bold text-white mb-4">¡Superviviente!</h3>
+             <h3 className="text-4xl font-bold text-white mb-4">¡Lo lograste!</h3>
              <p className="text-xl text-slate-300 mb-8">La palabra era: <strong className="text-emerald-400 text-3xl ml-2">{targetWord}</strong></p>
              <div className="flex justify-center gap-4">
                <button onClick={initGame} className="flex items-center gap-2 px-6 py-3 rounded-full bg-surface text-white hover:bg-white/10 border border-white/10 transition-all font-semibold">

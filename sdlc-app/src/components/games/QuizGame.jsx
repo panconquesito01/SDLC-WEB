@@ -4,11 +4,11 @@ import { CheckCircle2, XCircle, Trophy, RefreshCw, BrainCircuit, ArrowLeft } fro
 import { cn } from '../../lib/utils';
 
 export const questions = [
-  { text: "¿Cuál es el principal objetivo del Modelo DevSecOps?", options: ["Retrasar pruebas de seguridad", "Shift-Left (Seguridad Temprana)", "Eliminar QA"], correct: 1 },
-  { text: "En el Modelo Cascada, un error hallado en producción es...", options: ["Económicamente desastroso", "Barato de corregir", "Parte del diseño"], correct: 0 },
-  { text: "¿Cuál es el entregable inamovible de la Fase de Análisis?", options: ["Código fuente", "Documento de Diseño", "Software Requirement Specification (SRS)"], correct: 2 },
-  { text: "El término 'CI/CD' significa:", options: ["Continuous Integration / Deployment", "Cyber Incident / Detection", "Custom Interface / Design"], correct: 0 },
-  { text: "¿Qué Modelo es mejor para Software Avanzado de alto riesgo (Ej. Nuclear)?", options: ["Modelo V (Testeo Paralelo)", "Modelo Ágil", "RAD (Desarrollo Rápido)"], correct: 0 }
+  { text: "¿Para que sirve el SDLC?", options: ["Para ordenar el trabajo al crear software", "Para borrar errores automaticamente", "Para hacer mas lentas las apps"], correct: 0 },
+  { text: "¿Que ocurre en la fase de analisis?", options: ["Se aclara que necesita la app", "Se vende la app", "Se cambia el computador"], correct: 0 },
+  { text: "¿Que se hace en la fase de pruebas?", options: ["Se revisa si la app funciona bien", "Se pinta el logo final", "Se elimina el proyecto"], correct: 0 },
+  { text: "DevOps ayuda a...", options: ["Trabajar, probar y publicar en equipo", "Saltar todas las revisiones", "Quitar la seguridad"], correct: 0 },
+  { text: "¿Que pasa en mantenimiento?", options: ["La app se abandona", "Se corrigen errores y se agregan mejoras", "Se borra todo el proyecto"], correct: 1 }
 ];
 
 export function QuizGame({ onBack }) {
@@ -51,7 +51,7 @@ export function QuizGame({ onBack }) {
             <div className="flex justify-between items-center mb-8 border-b border-white/5 pb-6">
               <div className="flex items-center gap-3">
                 <BrainCircuit className="w-8 h-8 text-primary" />
-                <span className="text-white font-bold text-lg tracking-wide uppercase">Quiz Técnico</span>
+                <span className="text-white font-bold text-lg tracking-wide uppercase">Quiz rapido</span>
               </div>
               <span className="px-4 py-1.5 rounded-full bg-surface text-primary font-bold text-sm border border-white/5">
                 Pregunta {currentQ + 1} / {questions.length}
@@ -89,8 +89,8 @@ export function QuizGame({ onBack }) {
         ) : (
           <motion.div key="result" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="glass-effect rounded-[3rem] p-12 lg:p-16 border border-white/10 text-center shadow-2xl relative">
             <Trophy className="w-24 h-24 mx-auto text-yellow-400 mb-8 drop-shadow-[0_0_30px_rgba(250,204,21,0.5)]" />
-            <h3 className="text-4xl font-bold text-white mb-4">¡Completado!</h3>
-            <p className="text-xl text-slate-300 mb-8">Puntaje Final: <span className="text-primary font-black text-3xl mx-2">{score}</span> / {questions.length}</p>
+            <h3 className="text-4xl font-bold text-white mb-4">¡Muy bien!</h3>
+            <p className="text-xl text-slate-300 mb-8">Tu puntaje fue: <span className="text-primary font-black text-3xl mx-2">{score}</span> / {questions.length}</p>
             <div className="flex justify-center gap-4">
                <button onClick={resetQuiz} className="flex items-center gap-2 px-6 py-3 rounded-full bg-surface text-white hover:bg-white/10 border border-white/10 transition-all font-semibold">
                  <RefreshCw className="w-5 h-5" /> Reintentar

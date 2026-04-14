@@ -7,7 +7,7 @@ export function ModelsPage() {
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="pt-24 min-h-screen pb-24">
       <SectionContainer id="models-deep" className="bg-background">
-        <SectionHeader title="Modelos de Desarrollo" subtitle="Comparativa Arquitectónica" />
+        <SectionHeader title="Modelos de desarrollo" subtitle="Comparacion facil" />
         
         <div className="max-w-6xl mx-auto space-y-16">
           {sdlcContent.models.map((model, idx) => (
@@ -27,6 +27,10 @@ export function ModelsPage() {
                     M{idx + 1}
                   </div>
                   <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">{model.name}</h3>
+                  <div className="bg-primary/10 border border-primary/20 rounded-2xl p-5 mb-6">
+                    <span className="text-primary font-bold text-xs uppercase tracking-[0.2em] block mb-2">Piensalo asi</span>
+                    <p className="text-slate-200">{model.simpleIdea}</p>
+                  </div>
                   <p className="text-slate-300 text-lg leading-relaxed mb-8">
                     {model.description}
                   </p>
@@ -34,7 +38,7 @@ export function ModelsPage() {
                   <div className="bg-surface/80 rounded-2xl p-6 border border-white/5 flex gap-4 items-start">
                     <ShieldAlert className="w-6 h-6 text-secondary shrink-0 mt-1" />
                     <div>
-                      <h4 className="text-white font-bold mb-1">Caso de Uso Óptimo</h4>
+                      <h4 className="text-white font-bold mb-1">Cuando conviene usarlo</h4>
                       <p className="text-slate-400">{model.bestFor}</p>
                     </div>
                   </div>
@@ -44,7 +48,7 @@ export function ModelsPage() {
                   {/* Pros */}
                   <div className="bg-gradient-to-r from-emerald-500/10 to-transparent p-6 rounded-3xl border border-emerald-500/20">
                     <h4 className="text-emerald-400 font-bold mb-4 flex items-center gap-2">
-                      <Check className="w-5 h-5" /> Ventajas Técnicas
+                      <Check className="w-5 h-5" /> Ventajas
                     </h4>
                     <ul className="space-y-3">
                       {model.pros.map((pro, i) => (
@@ -59,7 +63,7 @@ export function ModelsPage() {
                   {/* Cons */}
                   <div className="bg-gradient-to-r from-red-500/10 to-transparent p-6 rounded-3xl border border-red-500/20">
                     <h4 className="text-red-400 font-bold mb-4 flex items-center gap-2">
-                      <X className="w-5 h-5" /> Desventajas / Riesgos
+                      <X className="w-5 h-5" /> Puntos a cuidar
                     </h4>
                     <ul className="space-y-3">
                       {model.cons.map((con, i) => (
